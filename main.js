@@ -1,9 +1,6 @@
-const enlacesNavegacion = document.querySelectorAll('.menu-navegacion a');
-const toggleMenu = document.querySelector('#menu-toggle');
-
-// Añadir un evento de clic a cada enlace
-enlacesNavegacion.forEach(enlace => {
-    enlace.addEventListener('click', () => {
-        toggleMenu.checked = false;
+// Este script se asegura de que el menú hamburguesa se maneje correctamente
+document.querySelectorAll('.menu-navegacion a').forEach(anchor => {
+    anchor.addEventListener('click', () => {
+        document.getElementById('menu-toggle').checked = false;
     });
 });
