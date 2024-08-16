@@ -23,8 +23,9 @@ header {
     align-items: center;
 }
 
-.logo-marca img {
-    height: 50px;
+.logo-marca {
+    font-size: 24px;
+    font-weight: bold;
 }
 
 /* Estilos del menú hamburguesa */
@@ -70,18 +71,21 @@ main {
     padding: 40px 20px;
     width: 100%;
     box-sizing: border-box;
+    text-align: justify;
 }
 
 h1 {
     color: #2c3e50;
     font-size: 2.5em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 p {
     color: #34495e;
     font-size: 1.1em;
     line-height: 1.6em;
+    text-align: justify;
 }
 
 .contenedor-tarjetas {
@@ -101,8 +105,6 @@ p {
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
-    max-width: calc(33.333% - 20px);
-    box-sizing: border-box;
 }
 
 .tarjeta-item:hover {
@@ -115,6 +117,7 @@ h2 {
     color: #2980b9;
     margin-bottom: 15px;
     font-size: 1.5em;
+    text-align: center;
 }
 
 footer {
@@ -182,12 +185,14 @@ footer {
     }
 
     main {
-        text-align: center;
+        text-align: justify;
+        padding: 10px;
     }
 
     .tarjeta-item {
         flex: 1 1 100%;
         max-width: 100%;
+        margin-bottom: 20px;
     }
 
     h1 {
@@ -197,22 +202,26 @@ footer {
     p {
         font-size: 1em;
     }
+
+    h2 {
+        font-size: 1.2em;
+    }
 }
 
 /* Tabletas (ancho entre 601px y 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
     .contenedor-tarjetas {
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     .tarjeta-item {
-        flex: 0 0 calc(50% - 20px);
         max-width: calc(50% - 20px);
+        margin-bottom: 20px;
     }
 
     main {
-        font-size: 1.2em;
+        padding: 30px;
     }
 
     h1 {
@@ -222,12 +231,16 @@ footer {
     p {
         font-size: 1.1em;
     }
+
+    h2 {
+        font-size: 1.4em;
+    }
 }
 
 /* Computadoras de escritorio (ancho superior a 1024px) */
 @media (min-width: 1025px) {
-    main {
-        font-size: 1.3em;
+    .contenedor-tarjetas {
+        justify-content: space-between;
     }
 
     .tarjeta-item {

@@ -15,20 +15,21 @@
             <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <label for="menu-toggle" class="menu-hamburguesa">&#9776;</label>
             <ul class="menu-navegacion">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Contenido</a></li>
-                <li><a href="#">Contacto</a></li>
+                <!-- Enlaces de navegación -->
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#contenido">Contenido</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="inicio">
         <center>
             <h1>Artículo Científico de Investigación Ingeniería en Sistemas e Informática</h1>
             <p>En esta sección se presentan varios artículos científicos que abordan diferentes aspectos de la ingeniería en sistemas e informática. Los artículos se centran en la aplicación práctica de conceptos teóricos, el desarrollo de tecnologías emergentes y su impacto en la educación y la sociedad.</p>
         </center>
         
-        <section class="contenedor-tarjetas">
+        <section class="contenedor-tarjetas" id="contenido">
             <div class="tarjeta-item">
                 <h2>Aplicación Web para Gestión y Seguimiento de Proyectos Integradores</h2>
                 <p>Este artículo presenta una aplicación web diseñada para facilitar la gestión y el seguimiento de los proyectos integradores en la Universidad Regional Autónoma de los Andes. La aplicación busca optimizar el proceso educativo, permitiendo a docentes y estudiantes mantener un interés prolongado en el desarrollo de la asignatura, y mejorar la integración de conocimiento interdisciplinario.</p>
@@ -49,12 +50,15 @@
         </section>
     </main>
 
-    <footer>
+    <footer id="contacto">
         <ul class="enlaces-sociales">
             <li><a href="https://www.facebook.com/jorge.rogel.7311" target="_blank">Facebook</a></li>
             <li><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
             <li><a href="https://www.instagram.com/mario_rogel21/" target="_blank">Instagram</a></li>
         </ul>
     </footer>
+
+    <!-- Incluyendo el script para manejar el menú hamburguesa -->
+    <script src="main.js"></script>
 </body>
 </html>
